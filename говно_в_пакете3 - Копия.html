@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дмитрий & Полина — 22.06.26</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Montserrat',sans-serif;background:#faf8f4;color:#1a1a1a;overflow-x:hidden}
+:root{--gold:#c9a96e;--dark:#111}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:18px 28px;background:rgba(250,248,244,.95);backdrop-filter:blur(10px)}
+.nav-logo{font-family:'Great Vibes',cursive;font-size:26px;color:var(--gold);text-decoration:none}
+
+/* HERO */
+#hero{height:100vh;position:relative;display:flex;align-items:flex-end}
+.hero-bg{
+position:absolute;inset:0;
+background:
+linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,.75)),
+url("2.jpg") center/cover no-repeat;
+}
+.hero-content{position:relative;z-index:2;padding:0 28px 60px}
+.hero-names{
+font-family:'Great Vibes',serif;
+font-size:clamp(60px,16vw,120px);
+font-weight:300;
+color:#fff;
+line-height:.9;
+}
+.hero-amp{color:var(--gold);font-style:italic}
+
+/* SECTIONS */
+.section{padding:80px 28px;text-align:center}
+.section--white{background:#fff}
+.section--cream{background:#faf8f4}
+
+/* DATE */
+.date-big{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(80px,22vw,160px);
+font-weight:300;
+}
+/* VENUE */
+#venue{
+position:relative;
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+}
+
+.venue-bg{
+position:absolute;
+inset:0;
+background:url("2.jpg") center/cover no-repeat;
+filter:grayscale(100%);
+}
+
+.venue-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.55);
+}
+
+.venue-card{
+position:relative;
+z-index:2;
+background:#fff;
+padding:70px 40px;
+max-width:420px;
+width:calc(100% - 48px);
+text-align:center;
+box-shadow:0 30px 60px rgba(0,0,0,.2);
+}
+
+.venue-pin{
+font-size:32px;
+margin-bottom:25px;
+}
+
+.venue-title{
+font-family:'Cormorant Garamond',serif;
+font-size:46px;
+font-weight:250;
+line-height:1.05;
+margin-bottom:10px;
+}
+
+.venue-sub{
+font-family:'Great Vibes',cursive;
+font-size:30px;
+color:var(--gold);
+margin-bottom:30px;
+}
+
+.venue-address{
+font-size:16px;
+color:#777;
+line-height:1.8;
+margin-bottom:40px;
+}
+
+.venue-btn{
+display:inline-block;
+background:#111;
+color:#fff;
+text-decoration:none;
+padding:18px 50px;
+font-size:12px;
+letter-spacing:4px;
+text-transform:uppercase;
+font-weight:500;
+transition:.3s;
+}
+
+.venue-btn:hover{
+background:var(--gold);
+}
+/* CALENDAR */
+.cal-wrap{max-width:340px;margin:30px auto}
+.cal-head-row,.cal-body{display:grid;grid-template-columns:repeat(7,1fr)}
+.cal-h{font-size:12px;color:#aaa;padding:6px 0}
+.cal-d{padding:8px 0;font-family:'Cormorant Garamond',serif;font-size:20px}
+.cal-d.hl{color:var(--gold);font-weight:600}
+
+/* FOOTER */
+footer{background:var(--dark);text-align:center;padding:60px 28px}
+.footer-photo{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:40px;
+border:4px solid rgba(201,169,110,.4);
+}
+.footer-names{
+font-family:'Great Vibes',cursive;
+font-size:36px;
+color:var(--gold);
+}
+.footer-date{
+font-family:'Cormorant Garamond',serif;
+font-size:14px;
+letter-spacing:5px;
+color:rgba(255,255,255,.4);
+margin-top:8px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#" class="nav-logo">Д & П</a>
+</nav>
+
+<section id="hero">
+<div class="hero-bg"></div>
+<div class="hero-content">
+<h1 class="hero-names">
+Дмитрий <br>
+<span class="hero-amp">&</span> Полина
+</h1>
+</div>
+</section>
+
+<section class="section section--white">
+<h2 style="font-family:'Great Vibes',cursive;font-size:38px;color:var(--gold)">Save the date!</h2>
+<h3 style="font-family:'Great Vibes',serif;font-size:45px;font-weight:300;margin-top:20px">
+Дорогие родные и близкие!
+</h3>
+<h3 style="font-family:'Great Vibes',serif;font-size:24px;font-weight:300;margin-top:20px">
+В один из прекрасных летних дней мы приглашаем Вас разделить с нами самое важное событие — день рождения нашей семьи! Будем искренне рады видеть Вас среди наших самых близких гостей, чтобы вместе прочувствовать этот момент, наполненный любовью и радостью.
+</h3>
+</section>
+
+<section class="section section--cream">
+<div class="date-big">
+22 <br>
+· <br>
+06 <br>
+· <br>
+26 <br>
+
+</div>
+</section>
+<section id="venue">
+  <div class="venue-bg"></div>
+  <div class="venue-overlay"></div>
+
+  <div class="venue-card">
+    <div class="venue-pin">📍</div>
+
+    <h2 class="venue-title">
+      Место<br>Проведения
+    </h2>
+
+    <div class="venue-sub">
+      Save the place!
+    </div>
+
+    <p class="venue-address">
+      Дворец бракосочетания №2, Санкт-Петербург,<br>
+      ул. Фурштатская, 52
+    </p>
+
+    <a href="https://yandex.ru/maps/org/dvorets_brakosochetaniya_2/1063007010"
+       target="_blank"
+       class="venue-btn">
+       КАК ДОБРАТЬСЯ
+    </a>
+  </div>
+</section>
+<section class="section section--white">
+<h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;margin-bottom:20px">Июнь</h3>
+<div class="cal-wrap">
+<div class="cal-head-row">
+<div class="cal-h">Пн</div><div class="cal-h">Вт</div><div class="cal-h">Ср</div>
+<div class="cal-h">Чт</div><div class="cal-h">Пт</div><div class="cal-h">Сб</div><div class="cal-h">Вс</div>
+</div>
+<div class="cal-body">
+<div></div><div></div><div></div><div></div><div></div><div class="cal-d">1</div><div class="cal-d">2</div>
+<div class="cal-d">3</div><div class="cal-d">4</div><div class="cal-d">5</div><div class="cal-d">6</div><div class="cal-d">7</div>
+<div class="cal-d">8</div><div class="cal-d">9</div><div class="cal-d">10</div><div class="cal-d">11</div><div class="cal-d">12</div><div class="cal-d">13</div><div class="cal-d">14</div>
+<div class="cal-d">15</div><div class="cal-d">16</div><div class="cal-d">17</div><div class="cal-d">18</div><div class="cal-d">19</div><div class="cal-d">20</div><div class="cal-d">21</div>
+<div class="cal-d hl">22</div><div class="cal-d">23</div><div class="cal-d">24</div><div class="cal-d">25</div><div class="cal-d">26</div><div class="cal-d">27</div><div class="cal-d">28</div>
+<div class="cal-d">29</div><div class="cal-d">30</div>
+</div>
+</div>
+</section>
+
+<footer>
+
+<img src="1.jpg" class="footer-photo">
+
+<span class="footer-names">Дмитрий & Полина</span>
+<div class="footer-date">22 · 06 · 2026</div>
+
+</footer>
+
+</body>
+</html>
