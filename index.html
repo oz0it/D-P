@@ -126,8 +126,16 @@ background:var(--gold);
 .cal-wrap{max-width:340px;margin:30px auto}
 .cal-head-row,.cal-body{display:grid;grid-template-columns:repeat(7,1fr)}
 .cal-h{font-size:12px;color:#aaa;padding:6px 0}
-.cal-d{padding:8px 0;font-family:'Cormorant Garamond',serif;font-size:20px}
-.cal-d.hl{color:var(--gold);font-weight:600}
+.cal-d{padding:8px 0;font-family:'Cormorant Garamond',bold;font-size:20px}
+.cal-d.hl{color: #c0392b;font-weight:620}
+/* SCHEDULE */
+#schedule{background:#faf8f4;padding:80px 28px;text-align:center}
+.schedule-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,12vw,80px);font-weight:300;margin-bottom:60px}
+.timeline{display:flex;flex-direction:column;align-items:center}
+.timeline-item{display:flex;flex-direction:column;align-items:center}
+.t-time{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,16vw,90px);font-weight:300;line-height:1}
+.t-label{font-size:13px;color:#999;letter-spacing:2px;margin-top:8px}
+.t-line{width:1px;height:60px;background:var(--gold);margin:20px 0}
 
 /* FOOTER */
 footer{background:var(--dark);text-align:center;padding:60px 28px}
@@ -239,6 +247,30 @@ margin-top:8px;
 
 <div class="cal-d">29</div><div class="cal-d">30</div>
 </div>
+</section>
+<section id="schedule">
+  <h2 class="schedule-title">Программа<br>Дня</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="t-time">09:30</div>
+      <div class="t-label">Сбор гостей</div>
+    </div>
+    <div class="t-line"></div>
+    <div class="timeline-item">
+      <div class="t-time">10:00</div>
+      <div class="t-label">Церемония регистрации</div>
+    </div>
+    <div class="t-line"></div>
+    <div class="timeline-item">
+      <div class="t-time">10:30</div>
+      <div class="t-label">Фотосессия</div>
+    </div>
+    <div class="t-line"></div>
+    <div class="timeline-item">
+      <div class="t-time">12:00</div>
+      <div class="t-label">Прогулка</div>
+    </div>
+  </div>
 </section>
 
 <footer>
